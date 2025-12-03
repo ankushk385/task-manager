@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #f3f5f7;
+  font-family: 'Inter', sans-serif;
+}
+
+.app-container {
+  max-width: 420px;
+  margin: 40px auto;
+  padding: 28px;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+header h2 {
+  text-align: center;
+  margin: 0;
+  font-size: 22px;
+  color: #2c3e50;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+input {
+  width: 90%;
+  padding: 14px;
+  border-radius: 10px;
+  border: 1px solid #d7d8db;
+  font-size: 15px;
+  background: #fafafa;
+  transition: 0.2s;
+}
+
+input:focus {
+  border-color: #3498db;
+  outline: none;
+  background: #ffffff;
+  box-shadow: 0 0 0 2px rgba(52,152,219,0.2);
+}
+
+button {
+  padding: 14px;
+  background: #3498db;
+  color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.2s;
+}
+
+button:hover {
+  background: #2980b9;
+}
+
+.logout-btn {
+  background: #e74c3c;
+  width: 30%;
+}
+
+.logout-btn:hover {
+  background: #c0392b;
+}
+
+
+.tasks-container {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.tasks-container ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ffffff;
+  padding: 14px;
+  border-radius: 12px;
+  border: 1px solid #e5e5e5;
+  font-size: 15px;
+}
+
+.task-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.task-item small {
+  color: #7f8c8d;
+  font-size: 13px;
+}
+
+.delete-btn {
+  background: #e74c3c;
+  padding: 8px 16px;
+  width: 60px;
+  font-size: 13px;
+  border-radius: 8px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.pagination button {
+  width: 20px;
+  padding: 8px 14px;
+  border-radius: 8px;
+}
